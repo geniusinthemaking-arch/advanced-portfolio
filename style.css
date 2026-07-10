@@ -21,11 +21,12 @@ a {
 }
 
 section {
-    background-color: rgb(245, 245, 245);
+    background-color: #F0F0FB;
 }
 
 .container {
     padding: 50px 0;
+    width: 100%;
 }
 
 .row {
@@ -59,7 +60,7 @@ button {
 }
 
 .blue {
-    color: #4765D1 !important;
+    color: #3354CC !important;
 }
 
 /*
@@ -94,7 +95,7 @@ LANDING PAGE
 }
 
 .social__link {
-    background-color: #4765D1;
+    background-color: #3354CC;
     color: white;
     padding: 6px;
     width: 44px;
@@ -113,7 +114,7 @@ LANDING PAGE
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: #242424;
+    background-color: #0E1839;
     color: white;
     position: absolute;
     bottom: 32px;
@@ -179,6 +180,7 @@ nav {
     height: 120px;
     overflow: hidden;
     position: relative;
+    filter: brightness(0) saturate(100%) invert(8%) sepia(52%) saturate(4051%) hue-rotate(215deg) brightness(97%) contrast(98%);
 }
 
 #personal-logo {
@@ -197,7 +199,7 @@ nav {
 
 .nav__link--anchor {
     font-size: 22px;
-    color: #242424;
+    color: #0E1839;
     font-weight: 700;
 }
 
@@ -217,6 +219,10 @@ PROJECTS
     margin-bottom: 60px;
 }
 
+.project {
+    margin-bottom: 136px;
+}
+
 .project__img {
     width: 100%;
 }
@@ -224,7 +230,7 @@ PROJECTS
 .project__wrapper {
     position: relative;
     border-radius: 62px;
-    box-shadow: 0 20px 80px 0 #17275E;
+    box-shadow: 0 20px 80px 0 #050814;
     overflow: hidden;
 }
 
@@ -245,12 +251,12 @@ PROJECTS
     transform: translateY(100%);
     opacity: 0;
     transition: opacity 300ms, transform 450ms ease;
-    color: white;
+    color: #C6CFF1;
     max-width: 550px;
 }
 
 .project__wrapper:hover .project__wrapper--bg {
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .project__wrapper--bg {
@@ -272,11 +278,47 @@ PROJECTS
 }
 
 .project__description--link {
-    color: white;
+    color: #C6CFF1;
     font-size: 24px;
     margin-right: 16px;
 }
 
 .project__description--para {
     margin: 16px 0;
+}
+
+/*
+
+FOOTER
+
+*/
+
+footer {
+    background-color: #0E1839;
+    display: flex;
+    padding: 6% 0%;
+}
+
+.footer__row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__logo--img {
+    width: 80px;
+    filter: invert(74%) sepia(3%) saturate(2329%) hue-rotate(188deg) brightness(97%) contrast(93%);
+}
+
+.footer__social--list {
+    width: 100%;
+    display: flex;
+    max-width: 620px;
+    justify-content: space-around;
+    margin: 28px 0;
+}
+
+.footer__social--link,
+.footer__copyright {
+    color: #C6CFF1;
 }
