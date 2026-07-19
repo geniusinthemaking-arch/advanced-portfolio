@@ -141,7 +141,7 @@ header {
 }
 
 .dark-theme .title,
-.dark-theme .secetion__title,
+.dark-theme .section__title,
 .dark-theme .section__sub--title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-circle-half-stroke,
@@ -153,8 +153,8 @@ header {
     background-color: #050814;
 }
 
-.dark-theme #personal-logo {
-    filter: none;
+.dark-theme .personal-logo__crop--container {
+    filter: invert(74%) sepia(3%) saturate(2329%) hue-rotate(188deg) brightness(97%) contrast(93%);
 }
 
 .dark-theme .scroll__icon {
